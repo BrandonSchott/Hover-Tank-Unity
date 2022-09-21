@@ -8,8 +8,7 @@ public class TankController : MonoBehaviour
     Rigidbody rbody;
     [SerializeField]
     float rotationSpeed = 100.0f;
-    [SerializeField]
-    float speed = 20.0f;
+    float speed = 200.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +16,7 @@ public class TankController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
     
         if(Input.GetKey(KeyCode.Escape))
